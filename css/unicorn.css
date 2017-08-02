@@ -1,0 +1,12 @@
+body {
+  background-image: url("../images/gradiente.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%; }
+  body .container {
+    height: 100%;
+    padding: 50px 0; }
+
+form {
+  padding: 1em 3em; }
