@@ -1,0 +1,24 @@
+{
+  "name": "build-a-unicorn",
+  "version": "1.0.0",
+  "description": "Build-A-Unicorn form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trixtar/build-a-unicorn.git"
+  },
+  "author": "Rita Gonzalez Hesaynes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trixtar/build-a-unicorn/issues"
+  },
+  "homepage": "https://github.com/trixtar/build-a-unicorn#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "materialize-css": "^0.100.1"
+  }
+}
