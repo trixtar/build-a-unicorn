@@ -1,7 +1,12 @@
 @import "../node_modules/materialize-css/sass/materialize.scss";
 
+$black: rgba(0,0,0,0.87);
+$light-grey: #9e9e9e;
+$teal: #26a69a;
+$font-size: 1.2rem;
+
 body {
-//	background: #E55D87;  /* fallback for old browsers */
+//	background: #E55D87;
 //	background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);  /* Chrome 10-25, Safari 5.1-6 */
 //	background: linear-gradient(to right, #5FC3E4, #E55D87); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-image: url("../images/gradiente.png");
@@ -11,10 +16,83 @@ body {
 	height: 100%;
 	.container {
 		height: 100%;
-		padding: 50px 0;
+		padding: 3em 0;
 	}
 }
 
 form {
-	padding: 1em 3em;
+	padding: 0.5em 4em 1.5em;
+	.wrapper {
+		.input-field {
+			height: 46px;
+			label {
+				font-size: $font-size;
+				&.active {
+					font-size: 1em;
+				}
+			}
+		}
+		.horn {
+			width: 75%;
+			margin: 1.5em 0;
+			label {
+				font-size: 1rem;
+			}
+			input {
+				margin: 0 0 10px 0;
+			}
+			.range-labels {
+				margin: -10px 0;
+				color: $light-grey;
+				font-size: 10px;
+				.left {
+					text-align: left;
+				}
+				.right {
+					text-align: right;
+				}
+			}
+		}
+		.terms {
+			margin: 2em 0 1.5em;
+			label {
+				padding-left: 2.5em;
+				font-size: $font-size;
+				line-height: $font-size;
+			}
+		}
+		.submit-btn {
+		margin: 1.2em 0;
+		}
+	}
+	
 }
+
+input[type=range]::-ms-fill-lower {
+    background: $teal;
+}
+
+input[type=range]::-moz-fill-lower {
+	background: $teal;
+}
+
+
+.select-wrapper input.select-dropdown {
+	color: $light-grey;
+	font-size: $font-size;
+}
+ul.dropdown-content.select-dropdown li:not(.disabled) span { color: $black; }
+
+/*
+.select-wrapper {
+	ul {
+		li > span {
+			color: $black;
+		}
+		li.disabled > span {
+			color: $light-grey;
+		}
+	}
+}
+*/
+
