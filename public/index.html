@@ -13,7 +13,7 @@
 	<header class="row header">
 		<div class="col s12">
 			<div class="navigation">
-				<a id="hamburger-menu" href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<a tabindex="-1" id="hamburger-menu" href="#" data-activates="mobile-demo" class="button-collapse" aria-haspopup="false" aria-expanded="false" aria-controls="menu" aria-label="Navigation"><i class="material-icons">menu</i></a>
 				<span class="page-title">Build-A-Unicorn!</span>
 			</div>
 		</div>
@@ -28,7 +28,7 @@
 					<form id="get-unicorn" method="get" action="/">
 						<div class="wrapper">
 					        <div class="input-field">
-					          <input id="name" name="name" type="text" minlength="2" maxlength="50" required="" aria-required="true" class="validate">
+					          <input tabindex="0" id="name" name="name" type="text" minlength="2" maxlength="50" required="" aria-required="true" class="validate">
 					          <label for="name" data-error="Your unicorn needs a name!">Unicorn's name</label>
 					        </div>
 					        <div class="input-field">
@@ -55,7 +55,7 @@
 					          <label for="email" data-error="Please fill in with a valid email">Email address</label>
 					        </div>
 					        <div class="terms">
-					        	<input type="checkbox" id="terms" name="terms" class="filled-in" required="" aria-required="true" />
+					        	<input type="checkbox" id="terms" name="terms" class="filled-in" required="" aria-required="true" aria-checked="false" />
       							<label for="terms" data-error="This one needs to be checked!">I accept terms and conditions</label>
       						</div>
       						<div class="center-align submit-btn">
