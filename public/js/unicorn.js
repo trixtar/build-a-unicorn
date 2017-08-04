@@ -28,7 +28,7 @@ $(document).ready(function() {
   // Hamburger menu dialog
 
   $('#hamburger-menu').click(function() {
-     Materialize.toast('Nothing here yet!', 4000, 'rounded')
+     Materialize.toast('Nothing there yet!', 4000, 'rounded')
   });
 
   // card hover animation
