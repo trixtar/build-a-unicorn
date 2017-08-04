@@ -19,3 +19,5 @@
 9. Wrote a short media query to ensure proper alert rendering on mobile devices.
 
 10. Added some accessibility-friendly labels.
+
+11. Tested on an older computer with a smaller screen to make final adjustments.

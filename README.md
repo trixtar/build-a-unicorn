@@ -2,6 +2,8 @@
 
 A unicorn-themed form written under the Materialize CSS framework. Successful form submission renders a JSON string output you can view on the browser's console.
 
+Tested on Mozilla Firefox and Google Chrome.
+
 ## How to install and view this form
 
 In order to install the form, you need to go through some simple steps:
