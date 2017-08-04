@@ -4,7 +4,7 @@
 
 2. The @extend method to add Materialize's own classes to HTML elements makes the page very hard to edit since I have no visual cues on which classes I have assigned to each element. I'll use the regular method and assign classes directly on my HTML code. 
 
-3. Form inputs seem a bit tricky to edit, especially the range picker. I'm going for the basic layout and fix this minor detailes later.
+3. Form inputs seem a bit tricky to edit, especially the range picker. I'm going for the basic layout and fix these minor details later.
 
 4. After testing the site on both Chrome & Mozilla, it seems media queries aren't necessary since the site appears to be 100% responsive. Hooray!
 
