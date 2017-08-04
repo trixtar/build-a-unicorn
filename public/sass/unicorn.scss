@@ -5,7 +5,7 @@
 
 // VARIABLES
 
-$breakpoint: 800px;
+$breakpoint: 1050px;
 $black: rgba(0,0,0,0.87);
 $light-grey: #9e9e9e;
 $my-blue: #00bcd5;
@@ -117,15 +117,28 @@ form {
 
 // MEDIA QUERIES
 
-// Mobile
+// Smaller devices
 
-@media screen and (max-width: $breakpoint){
+@media screen and (max-width: $breakpoint) {
+	form {
+		padding: 0.5em 2.5em 1.5em;
+	}
+}
+
+@media #{$medium-and-down} {
+	form {
+		.wrapper .input-field {
+			height: 60px;
+		}
+	}
+}
+
+// Mobile-specific
+
+@media #{$small-and-down} {
 	body {
 		background: -webkit-linear-gradient(right, #5FC3E4, #E55D87);
 		background: -o-linear-gradient(right, #5FC3E4, #E55D87);
 		background: linear-gradient(to left, #5FC3E4, #E55D87);
-	}
-	form .wrapper .input-field {
-		height: 60px;
 	}
 }

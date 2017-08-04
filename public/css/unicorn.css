@@ -6982,10 +6982,16 @@ form {
     margin: 1.2em 0;
     background-color: #00bcd5; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
+  form {
+    padding: 0.5em 2.5em 1.5em; } }
+
+@media only screen and (max-width: 992px) {
+  form .wrapper .input-field {
+    height: 60px; } }
+
+@media only screen and (max-width: 600px) {
   body {
     background: -webkit-linear-gradient(right, #5FC3E4, #E55D87);
     background: -o-linear-gradient(right, #5FC3E4, #E55D87);
-    background: linear-gradient(to left, #5FC3E4, #E55D87); }
-  form .wrapper .input-field {
-    height: 60px; } }
+    background: linear-gradient(to left, #5FC3E4, #E55D87); } }
