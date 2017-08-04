@@ -10,7 +10,15 @@
 </head>
 <body>
 	
-	<div class="container">
+	<header class="row header">
+		<div class="col s12">
+			<div class="navigation">
+				<a id="hamburger-menu" href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<span class="page-title">Build-A-Unicorn!</span>
+			</div>
+		</div>
+	</header>
+	<main class="container">
 		<div class="row">
 			<h4 class="white-text center-align">It's time to build your unicorn. Let's go!</h4>
 		</div>
@@ -44,7 +52,7 @@
 							</div>
 							<div class="input-field">
 					          <input id="email" name="email" type="email" class="validate" required="" aria-required="true">
-					          <label for="email" data-error="Please fill in with a valid e-mail">Email address</label>
+					          <label for="email" data-error="Please fill in with a valid email">Email address</label>
 					        </div>
 					        <div class="terms">
 					        	<input type="checkbox" id="terms" name="terms" class="filled-in" required="" aria-required="true" />
@@ -58,7 +66,7 @@
 				</div>
 			</div>
 		</div>	
-	</div>
+	</main>
 
 <!-- scripts -->	
 <script src="/lib/jquery/dist/jquery.js"></script>
