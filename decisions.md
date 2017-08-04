@@ -2,7 +2,7 @@
 
 1. In order to obtain the background image, I extracted the gradient layer from the .pdf source and exported it to .png using Inkscape.
 
-2. The @extend method to add Materialize's own classes to HTML elements makes the page very hard to edit since I have no visual clues on which classes I have assigned to each element. I'll use the regular method and assign classes directly on my HTML code. 
+2. The @extend method to add Materialize's own classes to HTML elements makes the page very hard to edit since I have no visual cues on which classes I have assigned to each element. I'll use the regular method and assign classes directly on my HTML code. 
 
 3. Form inputs seem a bit tricky to edit, especially the range picker. I'm going for the basic layout and fix this minor detailes later.
 
