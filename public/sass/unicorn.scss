@@ -25,6 +25,7 @@ form {
 	.wrapper {
 		.input-field {
 			height: 46px;
+			margin: 2em 0;
 			label {
 				font-size: $font-size;
 				&.active {
@@ -34,7 +35,7 @@ form {
 		}
 		.horn {
 			width: 75%;
-			margin: 1.5em 0;
+			margin: 2em 0 2.2em;
 			label {
 				font-size: 1rem;
 			}
@@ -54,7 +55,7 @@ form {
 			}
 		}
 		.terms {
-			margin: 2em 0 1.5em;
+			margin: 2em 0 2em;
 			label {
 				padding-left: 2.5em;
 				font-size: $font-size;
@@ -62,7 +63,7 @@ form {
 			}
 		}
 		.submit-btn {
-		margin: 1.2em 0;
+			margin: 1.2em 0;
 		}
 	}
 	

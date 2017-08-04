@@ -6923,14 +6923,15 @@ body {
 form {
   padding: 0.5em 4em 1.5em; }
   form .wrapper .input-field {
-    height: 46px; }
+    height: 46px;
+    margin: 2em 0; }
     form .wrapper .input-field label {
       font-size: 1.2rem; }
       form .wrapper .input-field label.active {
         font-size: 1em; }
   form .wrapper .horn {
     width: 75%;
-    margin: 1.5em 0; }
+    margin: 2em 0 2.2em; }
     form .wrapper .horn label {
       font-size: 1rem; }
     form .wrapper .horn input {
@@ -6944,7 +6945,7 @@ form {
       form .wrapper .horn .range-labels .right {
         text-align: right; }
   form .wrapper .terms {
-    margin: 2em 0 1.5em; }
+    margin: 2em 0 2em; }
     form .wrapper .terms label {
       padding-left: 2.5em;
       font-size: 1.2rem;

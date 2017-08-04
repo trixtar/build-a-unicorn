@@ -3,13 +3,17 @@
 
 $(document).ready(function() {
 
+  // inicialización
+
   var unicornForm = document.getElementById('get-unicorn');
   unicornForm.reset();
-
+    
+  
   // activo selects en Materialize
 
   $('select').material_select();
 
+  
   // cargo valores de JSON en el select #fur
 
   $.getJSON( "/public/json/document.json", function (data) {
@@ -21,10 +25,16 @@ $(document).ready(function() {
     $('#fur').material_select();
   });
 
-  // listener de submit al formulario
 
-  
-  
+  // card hover animation
+
+  $('.my-card').on({
+    mouseenter: function() {$('.my-card').addClass('z-depth-5');},
+    mouseleave: function() {$('.my-card').removeClass('z-depth-5');}
+  });
+
+
+  // listener de submit al formulario
 
   $("#get-unicorn").submit(function (event) {
   var unicorn = {
@@ -33,28 +43,20 @@ $(document).ready(function() {
     "fur": unicornForm.fur.value,
     "horn": unicornForm.horn.value,
     "email": unicornForm.email.value,
-    "terms-conditions": unicornForm.terms-conditions.value
+    "terms": unicornForm.terms.value
   };
-  console.log("el submit funciona");
-  console.log(unicorn);
+  validateForm();
+  var data = $("#get-unicorn").serializeArray();
+  var jsonString = JSON.stringify(data);
+  console.log(jsonString);
   event.preventDefault();
 });
 
 });
 
-/*
-var slider = document.getElementById('horn-length');
-  noUiSlider.create(slider, {
-   start: [5],
-   connect: true,
-   step: 1,
-   orientation: 'horizontal',
-   range: {
-     'min': 5,
-     'max': 25
-   },
-   format: wNumb({
-     decimals: 0
-   })
-  });
-*/
+
+
+function validateForm() {
+  console.log('validate function!');
+  if (unicorn.name == '') {Materialize.toast('I am a toast!');}
+}
