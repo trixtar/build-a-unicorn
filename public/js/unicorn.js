@@ -7,7 +7,6 @@ $(document).ready(function() {
 
   var unicornForm = document.getElementById('get-unicorn');
   unicornForm.reset();
-    
   
   // activo selects en Materialize
 
@@ -43,26 +42,22 @@ $(document).ready(function() {
   // listener de submit al formulario
 
   $("#get-unicorn").submit(function (event) {
-  var unicorn = {
-    "name": unicornForm.name.value,
-    "gender": unicornForm.gender.value,
-    "fur": unicornForm.fur.value,
-    "horn": unicornForm.horn.value,
-    "email": unicornForm.email.value,
-    "terms": unicornForm.terms.value
-  };
-  validateForm();
-  var data = $("#get-unicorn").serializeArray();
-  var jsonString = JSON.stringify(data);
-  console.log(jsonString);
-  event.preventDefault();
-});
+    event.preventDefault();
+    var unicorn = {
+      "name": unicornForm.name.value,
+      "gender": unicornForm.gender.value,
+      "fur": unicornForm.fur.value,
+      "horn": unicornForm.horn.value,
+      "email": unicornForm.email.value,
+      "terms": unicornForm.terms.value
+    };
+    var data = $("#get-unicorn").serializeArray();
+    var jsonString = JSON.stringify(data);
+    console.log(jsonString);
+    Materialize.toast(unicorn.name + ' is coming to life! Glitter on!', 7000, 'rounded', function() {
+      unicornForm.reset();
+    });
+  });
+
 
 });
-
-
-
-function validateForm() {
-  console.log('validate function!');
-  if (unicorn.name == '') {Materialize.toast('I am a toast!');}
-}

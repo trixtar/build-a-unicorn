@@ -6981,3 +6981,11 @@ form {
   form .wrapper .btn, form .wrapper .btn-large {
     margin: 1.2em 0;
     background-color: #00bcd5; }
+
+@media screen and (max-width: 800px) {
+  body {
+    background: -webkit-linear-gradient(right, #5FC3E4, #E55D87);
+    background: -o-linear-gradient(right, #5FC3E4, #E55D87);
+    background: linear-gradient(to left, #5FC3E4, #E55D87); }
+  form .wrapper .input-field {
+    height: 60px; } }
