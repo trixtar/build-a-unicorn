@@ -8,7 +8,7 @@
 
 4. After testing the site on both Chrome & Mozilla, it seems media queries aren't necessary since the site appears to be 100% responsive. Hooray!
 
-5. Tried importing the JSON file into a variable with an Ajax call, but it led to a cross-origin request error. Since, I need a server, I set up a Node.js server and imported my site into it, updated paths and was finally able to get the local JSON file data with a simple $.getJSON()
+5. Tried importing the JSON file into a variable with an Ajax call, but it led to a cross-origin request error. Since I needed a server, I set up a Node.js server and imported my site into it, updated paths and was finally able to get the local JSON file data with a simple $.getJSON()
 
 6. Decided to use Materialize's own HTML tools for form validation.
 
